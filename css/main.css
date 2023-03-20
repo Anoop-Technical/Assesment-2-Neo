@@ -1,0 +1,238 @@
+body,
+html {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
+  background: #002947;
+}
+
+.main_wrapper .fantasy_battle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0px;
+}
+.main_wrapper .fantasy_battle .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.main_wrapper .fantasy_battle .left div {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: #ffffff;
+}
+.main_wrapper .fantasy_battle .left div span {
+  font-style: italic;
+  color: #e47c29;
+}
+.main_wrapper .fantasy_battle .right {
+  background: #ff4848;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  width: 5.6rem;
+  height: 2.3rem;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_wrapper .fantasy_battle .right span {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  color: #ffffff;
+}
+.main_wrapper .main_vs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+.main_wrapper .main_vs .common {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main_wrapper .main_vs .common span {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  color: #ffffff;
+}
+.main_wrapper .main_vs .vs {
+  position: relative;
+  background: #024b5c;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  z-index: 1;
+}
+.main_wrapper .main_vs .vs::before {
+  content: "";
+  width: 3.8rem;
+  height: 0.1rem;
+  background: #024b5c;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.main_wrapper .team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #024b5c;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  margin: 0.5rem 0;
+}
+.main_wrapper .team .team_details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  color: #ffffff;
+}
+.main_wrapper .team .team_details .team_sign {
+  width: 2.6rem;
+  height: 2.6rem;
+  background: #82abfa;
+  border: 0.1rem solid #3d65b3;
+  border-radius: 50%;
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_wrapper .team .team_details .team_sign:hover {
+  background: #20beb5;
+  cursor: pointer;
+}
+.main_wrapper .team .score {
+  background: #012c36;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  display: flex;
+  color: #ffffff;
+}
+.main_wrapper .team .score .score_dash {
+  margin: 0 1rem;
+}
+.main_wrapper .team_features {
+  color: #ffffff;
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+.main_wrapper .team_features .wrapper_left {
+  width: 50%;
+}
+.main_wrapper .team_features .wrapper_left .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_wrapper .team_features .wrapper_left .left .inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main_wrapper .team_features .wrapper_left .left .inner .features_details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main_wrapper .team_features .wrapper_left .left .inner .features_details .name {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
+.main_wrapper .team_features .wrapper_left .left .inner .features_details .prop {
+  background: #000000;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1.4rem;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+}
+.main_wrapper .team_features .wrapper_left .left .rating {
+  width: 25%;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #00b1db;
+}
+.main_wrapper .team_features .wrapper_right {
+  width: 50%;
+}
+.main_wrapper .team_features .wrapper_right .right {
+  border-left: 0.1rem solid rgba(255, 255, 255, 0.15);
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_wrapper .team_features .wrapper_right .right .inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row-reverse;
+}
+.main_wrapper .team_features .wrapper_right .right .inner .features_details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main_wrapper .team_features .wrapper_right .right .inner .features_details .name {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
+.main_wrapper .team_features .wrapper_right .right .inner .features_details .prop {
+  background: #000000;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1.4rem;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+}
+.main_wrapper .team_features .wrapper_right .right .rating {
+  width: 25%;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #00b1db;
+}
+.main_wrapper .buttons .cu_Button {
+  max-width: 16rem;
+  width: 100%;
+  height: 4rem;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  background: #e47c29;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */

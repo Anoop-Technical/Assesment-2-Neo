@@ -1,0 +1,234 @@
+// Colors
+@import "colorsVariable";
+
+// Mixin
+@import "mixin";
+
+body,
+html {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
+  background: $bg_color;
+}
+
+.main_wrapper {
+  .fantasy_battle {
+    @include flex-Prop1;
+    padding: 2rem 0px;
+
+    .left {
+      @include flex-Prop2;
+      gap: 2.5rem;
+
+      div {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        color: $text_white;
+
+        span {
+          font-style: italic;
+          color: $text_orange;
+        }
+      }
+    }
+
+    .right {
+      background: $live_red;
+      border-radius: 0.4rem;
+      padding: 1rem;
+      width: 5.6rem;
+      height: 2.3rem;
+      gap: 0.5rem;
+      @include flex-Prop2;
+
+      span {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        color: $text_white;
+      }
+    }
+  }
+
+  .main_vs {
+    @include flex-Prop3;
+    padding: 1.5rem 0;
+    cursor: pointer;
+
+    .common {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      span {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        color: $text_white;
+      }
+    }
+
+    .vs {
+      position: relative;
+      background: $vs_bg;
+      color: $text_white;
+      padding: 0.5rem;
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 0.8rem;
+      line-height: 0.9rem;
+      z-index: 1;
+
+      &::before {
+        content: "";
+        width: 3.8rem;
+        height: 0.1rem;
+        background: $vs_bg;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+      }
+    }
+  }
+
+  .team {
+    @include flex-Prop1;
+    background: $vs_bg;
+    border-radius: 0.4rem;
+    padding: 2rem;
+    margin: 0.5rem 0;
+
+    .team_details {
+      @include flex-Prop2;
+      gap: 1rem;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      color: $text_white;
+
+      .team_sign {
+        width: 2.6rem;
+        height: 2.6rem;
+        background: #82abfa;
+        border: 0.1rem solid #3d65b3;
+        border-radius: 50%;
+        padding: 1.4rem;
+        @include flex-Prop2;
+
+        &:hover {
+          background: $hover_color;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .score {
+      background: $score_bg;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+      padding: 1rem;
+      border-radius: 0.4rem;
+      display: flex;
+      color: $text_white;
+
+      .score_dash {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  .team_features {
+    color: $text_white;
+    display: flex;
+    padding: 0.5rem 1rem;
+
+    .wrapper_left {
+      width: 50%;
+
+      .left {
+        @include flex-Prop1;
+
+        .inner {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          .features_details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .name {
+              @include featuresdetails_name;
+            }
+
+            .prop {
+              @include featuresdetails_prop;
+            }
+          }
+        }
+
+        .rating {
+          @include rating-props;
+        }
+      }
+    }
+
+    .wrapper_right {
+      width: 50%;
+
+      .right {
+        border-left: 0.1rem solid rgba(255, 255, 255, 0.15);
+        flex-direction: row-reverse;
+        @include flex-Prop1;
+
+        .inner {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          flex-direction: row-reverse;
+
+          .features_details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .name {
+              @include featuresdetails_name;
+            }
+
+            .prop {
+              @include featuresdetails_prop;
+            }
+          }
+        }
+
+        .rating {
+          @include rating-props;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    .cu_Button {
+      max-width: 16rem;
+      width: 100%;
+      height: 4rem;
+      outline: 0;
+      border: 0;
+      padding: 1rem;
+      background: $text_orange;
+      border-radius: 0.4rem;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+      color: #ffffff;
+    }
+  }
+}

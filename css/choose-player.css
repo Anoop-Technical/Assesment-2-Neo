@@ -1,0 +1,214 @@
+body,
+html {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
+  background: #002947;
+}
+
+.main_wrapper .fantasy_battle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0px;
+}
+.main_wrapper .fantasy_battle .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.main_wrapper .fantasy_battle .left div {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: #ffffff;
+}
+.main_wrapper .fantasy_battle .left div span {
+  font-style: italic;
+  color: #e47c29;
+}
+.main_wrapper .fantasy_battle .right {
+  color: #ffffff;
+  background: #024b5c;
+  border-radius: 0.4rem;
+  padding: 1rem 2rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  cursor: pointer;
+}
+.main_wrapper .main_vs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+.main_wrapper .main_vs .common {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main_wrapper .main_vs .common span {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  color: #ffffff;
+}
+.main_wrapper .main_vs .vs {
+  position: relative;
+  background: #024b5c;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  z-index: 1;
+}
+.main_wrapper .main_vs .vs::before {
+  content: "";
+  width: 3.8rem;
+  height: 0.1rem;
+  background: #024b5c;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.main_wrapper .dash_board {
+  background: #024b5c;
+  padding: 1.5rem 1rem;
+  border: 0.1rem solid #024b5c;
+  border-radius: 0.4rem;
+  gap: 1rem;
+}
+.main_wrapper .dash_board .dashborad_up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_wrapper .dash_board .dashborad_up .player_img {
+  width: 4.6rem;
+  height: 5.3rem;
+  background: #002947;
+  border-radius: 5px;
+}
+.main_wrapper .dash_board .dashborad_up .player_img5 {
+  width: 4.6rem;
+  height: 5.3rem;
+  background: #002947;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background: url(../images/img1.svg);
+}
+.main_wrapper .dash_board .dashborad_up .player_img6 {
+  width: 4.6rem;
+  height: 5.3rem;
+  background: #002947;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background: url(../images/img2.svg);
+}
+.main_wrapper .dash_board .dashborad_up .blank_img {
+  width: 4.6rem;
+  height: 5.3rem;
+  background: #002947;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background: url(../images/blank-img.svg);
+}
+.main_wrapper .dash_board .dashborad_lo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+.main_wrapper .dash_board .dashborad_lo .right {
+  background: #002947;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+}
+.main_wrapper .dash_board .dashborad_lo .right span {
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.main_wrapper .dash_board .dashborad_lo .features_details {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main_wrapper .dash_board .dashborad_lo .features_details .name {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+}
+.main_wrapper .dash_board .dashborad_lo .features_details .prop {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  background: #82abfa;
+  border: 0.1rem solid #3d65b3;
+  border-radius: 50%;
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_wrapper .pitch {
+  background: url(../images/ground-pitch-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 230px;
+  height: 100%;
+  cursor: pointer;
+}
+.main_wrapper .pitch .pitch_img {
+  display: flex;
+  justify-content: space-around;
+}
+.main_wrapper .pitch h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+.main_wrapper .bottom_txt {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+.main_wrapper .bottom_txt h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+.main_wrapper .buttons .cu_Button {
+  max-width: 16rem;
+  width: 100%;
+  height: 4rem;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  background: #e47c29;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+}/*# sourceMappingURL=choose-player.css.map */

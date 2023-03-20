@@ -1,0 +1,53 @@
+@mixin cu_flex{
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-Prop1 {
+    @include cu_flex;
+    justify-content: space-between;
+}
+
+@mixin flex-Prop2 {
+    @include cu_flex;
+    justify-content: center;
+}
+
+@mixin flex-Prop3 {
+    @include cu_flex;
+    justify-content: space-around;
+}
+
+@mixin rating-props {
+    width: 25%;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    color: $ratingtxt_color;
+}
+
+@mixin featuresdetails_prop {
+    background: $black_color;
+    padding: 0.3rem 0.5rem;
+    border-radius: 1.4rem;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    @include flex-Prop2;
+    width: 5rem;
+}
+
+@mixin featuresdetails_name {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+@mixin player_bgimg{
+    width: 4.6rem;
+    height: 5.3rem;
+    background: $bg_color;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
